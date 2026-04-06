@@ -1,0 +1,54 @@
+{
+  "name": "public-image-optimizer",
+  "version": "0.1.0",
+  "description": "CLI for optimizing public images with Sharp, prebuilding WebP/AVIF variants, and caching repeat work for CDN-friendly delivery setups.",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "bin": {
+    "public-image-optimizer": "bin/public-image-optimizer.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "optimize": "node ./bin/public-image-optimizer.js",
+    "optimize:changed": "node ./bin/public-image-optimizer.js --changed"
+  },
+  "keywords": [
+    "avif",
+    "cdn",
+    "cli",
+    "git",
+    "image-compression",
+    "images",
+    "optimization",
+    "optimizer",
+    "public",
+    "sharp",
+    "static-assets",
+    "web-performance",
+    "webp"
+  ],
+  "author": "Igor Kuznetsov <igorkuznetsov2011@mail.ru>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuzay56/image-optimizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuzay56/image-optimizer/issues"
+  },
+  "homepage": "https://github.com/kuzay56/image-optimizer#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}
