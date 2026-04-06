@@ -1,5 +1,9 @@
 # public-image-optimizer
 
+Available on npm: https://www.npmjs.com/package/public-image-optimizer
+
+Install: `npm install --save-dev public-image-optimizer`
+
 A small CLI for optimizing images in a project's `public/` directory. It shrinks original `.png`, `.jpg`, and `.jpeg` files when that actually makes them smaller, generates adjacent `.webp` and `.avif` files, and keeps a cache so the same images are not processed over and over again.
 
 It is especially useful for CDN and static delivery setups where you want to prepare `png/jpeg + webp + avif` in advance and then let your CDN, edge logic, or frontend choose what to serve.
